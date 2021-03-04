@@ -8,7 +8,7 @@ import {
   TouchableOpacity,
   FlatList,
   ImageBackground,
-  SafeAreaView
+  SafeAreaViewg
 } from 'react-native';
 import {Icon} from 'react-native-elements';
 import {TakeHolidayContext} from '../screens/context';
