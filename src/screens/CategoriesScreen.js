@@ -30,9 +30,13 @@ export function CategoriesScreen({navigation}) {
         // borderWidth: 5,
         marginTop: height * 0.018,
         borderTopWidth: 7,
+        borderTopRightRadius: height * 0.05,
+        borderBottomLeftRadius: height * 0.05,
+        borderBottomColor:"#fc4503",
+        borderTopColor:'#9403fc',
         borderBottomWidth: 7,
-        borderTopColor: 'black',
-        borderBottomColor: 'black',
+        // borderTopColor: 'black',
+        // borderBottomColor: 'black',
       }}>
       <View
         style={{
@@ -44,7 +48,8 @@ export function CategoriesScreen({navigation}) {
           borderRadius: height * 0.04,
           alignItems: 'center',
           justifyContent: 'center',
-          backgroundColor: 'rgba(0,0,0,0.7)',
+          // backgroundColor: 'rgba(0,0,0,0.7)',
+          backgroundColor:'#348520',
           shadowColor: '#ac4b63',
           shadowOffset: {width: 5, height: 5},
           shadowOpacity: 5,

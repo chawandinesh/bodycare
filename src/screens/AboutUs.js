@@ -14,7 +14,7 @@ import {Icon} from 'react-native-elements';
 import {TakeHolidayContext} from '../screens/context';
 const {height, width} = Dimensions.get('window');
 
-export function AboutUs({navigation}) {
+export function AboutUs(props) {
   return (
     <SafeAreaView>
     <ImageBackground blurRadius={0} source={require('../assets/bcbk1.jpg')} style={{width, height, flex: 1}}>
@@ -27,7 +27,7 @@ export function AboutUs({navigation}) {
         }}>
         <TouchableOpacity
           style={{justifyContent: 'center', padding: 5}}
-          onPress={() => navigation.goBack()}>
+          onPress={() => props.navigation.goBack()}>
           <Icon
             name="ios-arrow-back-outline"
             type="ionicon"
@@ -66,7 +66,7 @@ export function AboutUs({navigation}) {
             width: width * 0.98,
             paddingTop: height * 0.1,
             // paddingHorizontal: height * 0.02,
-            backgroundColor: 'rgba(0,0,0,0.2)',
+            backgroundColor: 'rgba(0,0,0,0.5)',
             // borderColor: 'white',
             borderWidth: 2,
             borderColor: 'black',
